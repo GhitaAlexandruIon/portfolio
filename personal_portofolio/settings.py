@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'portfolio',
     # other apps
     'bootstrap4',
-    'debug_toolbar',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +127,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/static_root')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles/media_root')
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

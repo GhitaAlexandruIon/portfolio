@@ -1,0 +1,9 @@
+.nav-link{
+    margin-left: 50px;
+}
+.nav-link:hover {
+    background-color: dodgerblue;
+}
+.navbar{
+    margin-bottom: 20px;
+}

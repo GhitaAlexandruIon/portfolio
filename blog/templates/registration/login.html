@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load bootstrap4 %}
+    {% block title %}{{ block.super }} | Login{% endblock %}
+{% block content %}
+  <div class="jumbotron">
+      <h2 >Please Login: </h2>
+    <h3>(Must be SuperUser, please check admin for issues.)</h3>
+    {% if form.errors %}
+        <p>Your username and password didn't match.Please try again!</p>
+    {% endif %}
+    <form method="POST" action="{% url 'login' %}" class="">
+    {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" class='btn btn-primary' value="Login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+  </div>
+{% endblock %}

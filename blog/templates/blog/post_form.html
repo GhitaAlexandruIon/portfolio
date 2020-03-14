@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+    {% block title %}{{ block.super }} | Form{% endblock %}
+{% block content %}
+    {% load bootstrap4 %}
+    <h1>New Post</h1>
+    <form class="post-form" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="save btn btn-primary">Save</button>
+    </form>
+{% endblock %}
+<!doctype html>
