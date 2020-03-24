@@ -1,3 +1,4 @@
+django-ckeditor
 asgiref==3.2.3
 bootstrap4==0.1.0
 Django==3.0.3
