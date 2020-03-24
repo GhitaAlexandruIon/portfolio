@@ -25,7 +25,7 @@ SECRET_KEY = 'jcg!6mypyy0a!q+oahw69r-1sz9)nyhsl)_2(s^!5h5hu713^x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ghitaalexandruion.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,13 +81,8 @@ WSGI_APPLICATION = 'personal_portofolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'GhitaAlexandruIo$portofolio',
-        'USER': 'GhitaAlexandruIo',
-        'PASSWORD': 'GreenArrow',
-        'HOST': 'GhitaAlexandruIon.mysql.pythonanywhere-services.com',
-        'PORT': '',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
