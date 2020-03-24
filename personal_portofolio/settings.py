@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'GhitaAlexandruIo$portofolio',
-        'USER': 'GhitaAalexandruIon',
+        'USER': 'GhitaAalexandruIo',
         'PASSWORD': 'GreenArrow',
         'HOST': 'GhitaAlexandruIon.mysql.pythonanywhere-services.com',
         'PORT': '',
