@@ -1,9 +1,11 @@
 .nav-link{
     margin-left: 50px;
 }
-.nav-link:hover {
-    background-color: dodgerblue;
-}
 .navbar{
     margin-bottom: 20px;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
 }

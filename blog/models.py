@@ -10,7 +10,9 @@ class Post(models.Model):
     text = RichTextField()
     create_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    image = models.ImageField(null=True, blank=True, default='#')
+    image = models.ImageField(upload_to='blog/img', null=True)
+    url = models.URLField(blank=True)
+    likes = models.ManyToManyField('auth.User', related_name='post_likes', blank=True)
 
     def publish(self):
         self.published_date = timezone.now()

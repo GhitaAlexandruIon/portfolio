@@ -2,28 +2,12 @@
 {% load static %}
 
 {% block content %}
-    <h1>Portfolio</h1>
-    <br>
-    <hr>
-    <a href="{% url 'blog:post_list' %}">Blog</a>
-    <a href="{% static 'portfolio/CCA-Certificate-CSS Level 1.pdf' %}">Resume</a>
-    <div class="row justify-content-center my-3">
-        <div class="col-5">
-            <img src="{% static 'portfolio/background.jpeg' %}" class="img-fluid" alt="">
-        </div>
-    </div>
-
-    <div class="row justify-content-center mb-3">
-        <div class="col-md-9 text-center">
-            <h1 id="hometext" class="font-weight-bold">Chestii </h1>
-        </div>
-    </div>
-
+    <div class="container">
     <h2 class="mt-5">Portfolio</h2>
     <hr>
     <div class="row">
     {% for project in projects %}
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-8">
 
             {% if project.url %}
                 <a href="{{ project.url }}">
@@ -38,6 +22,7 @@
 
         </div>
     {% endfor %}
+    </div>
 {% endblock %}
 </div>
 
