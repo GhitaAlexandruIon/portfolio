@@ -1,18 +1,13 @@
 {% load static %}
 /*
 ====================================================
-
 * 	[Master Stylesheet]
-
 	Theme Name :
 	Version    :
 	Author     :
 	Author URI :
-
 ====================================================
-
 	TOC
-
 	1. PRIMARY STYLES
 	2. COMMONS FOR PAGE DESIGN
 	3. HEADER
@@ -25,10 +20,7 @@
 	8. PROGRESSIONS SECTION
 	9. ICONBOXES SECTION
 	10. FOOTER
-
 ====================================================
-
-
 /* ---------------------------------
 1. PRIMARY STYLES
 --------------------------------- */
@@ -270,4 +262,3 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 --------------------------------- */
 
 .copyright{ text-align: center; padding: 30px 0; background: #28023D; }
-

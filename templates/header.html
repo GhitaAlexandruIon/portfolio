@@ -1,20 +1,8 @@
+{% extends 'new_base.html' %}
 {% load static %}
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title></title>
-    <meta http-equiv="X-UA-Compatible" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
-    <!-- Stylesheets -->
-    <link href="{% static 'css/ionicons.css' %}" rel="stylesheet">
-    <link href="{% static 'css/fluidbox.css' %}" rel="stylesheet">
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-</head>
-<body>
+
+
+{% block new_base %}
 <header>
     <div class="container">
         <div class="heading-wrapper">
@@ -34,7 +22,6 @@
                         <i class="icon ion-ios-telephone-outline"></i>
                         <div class="right-area">
                             <h5>0735434902</h5>
-                            <h6>MIN - FRI,8AM - 7PM</h6>
                         </div>
                     </div>
                 </div>
@@ -68,16 +55,20 @@
                         <li><b>EMAIL : </b>ghita.alexandru6@gmail.com</li>
                     </ul>
                     <ul class="social-icons">
-                        <li><a href="https://github.com/GhitaAlexandruIon" target="_blank"><i class="ion-social-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/alexandru-ghita-876178106/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/alexghita365/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/365recall" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="https://www.pythonanywhere.com/" target="_blank"><i class="ion-social-python"></i></a></li>
+                        <li><a href="https://github.com/GhitaAlexandruIon" target="_blank"><i
+                                class="ion-social-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/alexandru-ghita-876178106/" target="_blank"><i
+                                class="ion-social-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/alexghita365/" target="_blank"><i
+                                class="ion-social-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/365recall" target="_blank"><i
+                                class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.pythonanywhere.com/" target="_blank"><i class="ion-social-python"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
-</body>
-</html>
+{% endblock %}

@@ -1,20 +1,5 @@
-{% load static %}
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title></title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
-    <link href="{% static 'css/ionicons.css' %}" rel="stylesheet">
-    <link href="{% static 'css/fluidbox.css' %}" rel="stylesheet">
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-</head>
-<body>
-
+{% extends 'new_base.html' %}
+{% block new_base  %}
 <section class="accordian-section section">
     <div class="container">
         <div class="row">
@@ -33,53 +18,36 @@
                     <div></div>
                     <p class="progress-title"><b>CSS</b></p></div>
 
-                <div class="line-progress margin-b-20" data-prog-percent=".97">
+                <div class="line-progress margin-b-20" data-prog-percent=".70">
                     <div></div>
                     <p class="progress-title"><b>PHOTOSHOP</b></p></div>
 
                 <div class="line-progress margin-b-50" data-prog-percent=".85">
                     <div></div>
-                    <p class="progress-title"><b>ILLUSTRATOR</b></p></div>
+                    <p class="progress-title"><b>XD</b></p></div>
 
             </div><!-- col-sm-6 -->
             <div class="col-md-12 col-lg-6">
 
-                <div class="line-progress margin-b-20" data-prog-percent=".89">
+                <div class="line-progress margin-b-20" data-prog-percent=".65">
                     <div></div>
-                    <p class="progress-title"><b>HTML</b></p></div>
+                    <p class="progress-title"><b>JS</b></p></div>
 
-                <div class="line-progress margin-b-20" data-prog-percent=".91">
+                <div class="line-progress margin-b-20" data-prog-percent=".80">
                     <div></div>
-                    <p class="progress-title"><b>CSS</b></p></div>
+                    <p class="progress-title"><b>PYTHON</b></p></div>
 
-                <div class="line-progress margin-b-20" data-prog-percent=".97">
+                <div class="line-progress margin-b-20" data-prog-percent=".76">
                     <div></div>
-                    <p class="progress-title"><b>PHOTOSHOP</b></p></div>
+                    <p class="progress-title"><b>DJANGO</b></p></div>
 
-                <div class="line-progress margin-b-50" data-prog-percent=".85">
+                <div class="line-progress margin-b-50" data-prog-percent=".77">
                     <div></div>
-                    <p class="progress-title"><b>ILLUSTRATOR</b></p></div>
+                    <p class="progress-title"><b>PYCHARM</b></p></div>
 
             </div><!-- col-sm-6 -->
         </div><!-- row -->
     </div><!-- container -->
 </section>
+{% endblock %}
 
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-
-<script src="{% static 'js/tether.min.js' %}"></script>
-
-<script src="{% static 'js/bootstrap.js' %}"></script>
-
-<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
-
-<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-
-<script src="{% static 'js/progressbar.min.js' %}"></script>
-
-<script src="{% static 'js/jquery.fluidbox.min.js' %}"></script>
-
-<script src="{% static 'js/scripts.js' %}"></script>
-
-</body>
-</html>
