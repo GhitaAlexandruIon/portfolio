@@ -3,10 +3,10 @@
 
 
 {% block content %}
-    <div class="container-fluid align-left">
+    <div class="container-fluid align-content-center">
         <h1 class='posttitle loader'>{{ post.title }}</h1>
         <div class="detail_image">
-            <img class="img-fluid mb-4" src="{{ post.image.url }}" alt="post image">
+            <img class="img-fluid mb-4 post_img" src="{{ post.image.url }}" alt="post image">
         </div>
 
         {% if post.published_date %}

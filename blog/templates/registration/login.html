@@ -4,7 +4,10 @@
 {% block content %}
   <div class="jumbotron">
       <h2 >Please Login: </h2>
-    <h3>(Must be SuperUser, please check admin for issues.)</h3>
+    <h3>(Registration only for approved users)
+    <h4>For mor details please contact <a href="{% url 'blog:email' %}">Me</a></h4>
+    </h3>
+
     {% if form.errors %}
         <p>Your username and password didn't match.Please try again!</p>
     {% endif %}
