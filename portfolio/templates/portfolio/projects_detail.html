@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{{ block.super }} | Detail{% endblock %}
+
+
+{% block content %}
+    <div class="container-fluid align-content-center">
+        <h1 class='posttitle loader'>{{ project.title }}</h1>
+        <div class="detail_image">
+            <img class="img-fluid mb-4 post_img" src="{{ projects.image.url }}" alt=" image">
+        </div>
+        <div class="jumbotron">
+            <pre class='text-center'>{{ projects.description|safe }}</pre>
+
+        </div>
+    </div>
+    <hr>
+    <hr>
+    {% if project.url %}
+        <a href="{{ project.url }}">
+            <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+        </a>
+    {% else %}
+
+        <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+    {% endif %}
+{% endblock %}
