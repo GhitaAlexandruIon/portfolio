@@ -8,6 +8,7 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+
 /*a link animation*/
 .nav-link {
     color: #FFF;
@@ -20,8 +21,7 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
- .nav-link:before, .nav-link:after
-{
+.nav-link:before, .nav-link:after {
     position: absolute;
     opacity: 0.5;
     height: 100%;
@@ -31,21 +31,26 @@ a:-webkit-any-link {
     transition: all 0.3s;
 }
 
-.nav-link:before
-{
+.nav-link:before {
     left: 0;
     top: 0;
 }
 
- .nav-link:after
-{
+.nav-link:after {
     right: 0;
     bottom: 0;
 }
 
- .nav-link:hover:before,  .nav-link:hover:after
-{
+.nav-link:hover:before, .nav-link:hover:after {
     opacity: 1;
     height: 2px;
     width: 100%;
+}
+
+/*brand font*/
+.navbar-brand {
+    font-family: 'Kenia', cursive;
+}
+.nav-link:hover{
+    font-family: 'Kenia', cursive;
 }

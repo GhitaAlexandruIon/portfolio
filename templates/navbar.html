@@ -1,6 +1,6 @@
 {% load static %}
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">Portofolio</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Ghita Alexandru</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,9 +8,6 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'blog:post_list' %}">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% static 'portfolio/CCA-Certificate-CSS Level 1.pdf' %}">Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'blog:about' %}">About Me</a>
