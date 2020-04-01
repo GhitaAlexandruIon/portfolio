@@ -5,7 +5,7 @@
 {% block content %}
     <div class="container-fluid align-content-center">
         <h1 class='posttitle loader'>{{ project.title }}</h1>
-        <div class="detail_image">
+        <div class="detail_image img-fluid">
             <img class="img-fluid mb-4 post_img" src="{{ projects.image.url }}" alt=" image">
         </div>
         <div class="jumbotron">
@@ -13,14 +13,4 @@
 
         </div>
     </div>
-    <hr>
-    <hr>
-    {% if project.url %}
-        <a href="{{ project.url }}">
-            <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
-        </a>
-    {% else %}
-
-        <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
-    {% endif %}
 {% endblock %}
