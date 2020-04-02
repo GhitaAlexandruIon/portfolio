@@ -5,7 +5,10 @@
         {% for post in post_list %}
             <div class="post">
                 <h1><a href="{% url 'blog:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <img src="{{ post.image.url }}" class="img-fluid mb-2 post_img" alt="">
+                <div class="jumbotron">
+                    <img src="{{ post.image.url }}" class="img-fluid mb-2 post_img" alt="">
+
+                </div>
                 <div class="date">
                     <p>Published on: {{ post.published_date|date:'D M Y' }}</p>
                 </div>
