@@ -59,7 +59,7 @@
     2. COMMONS FOR PAGE DESIGN
     --------------------------------- */
     .section {
-        padding: 50px 0 0px;
+        padding: 50px 0 0;
     }
 
     .section .heading {
@@ -83,7 +83,7 @@
     }
 
     .portfolio-section .portfolioFilter {
-        margin: 0px 0 10px;
+        margin: 0 0 10px;
     }
 
     .portfolio-section .portfolioContainer {
@@ -93,7 +93,7 @@
 
     .portfolio-section .p-item {
         width: 50%;
-        padding: 0 15px 0px;
+        padding: 0 15px 0;
     }
 
     .portfolio-section .p-item {
@@ -175,7 +175,7 @@
     3. HEADER
     --------------------------------- */
     header .heading-wrapper {
-        padding: 10px 15px 0px;
+        padding: 10px 15px 0;
     }
 
     header .info .icon {

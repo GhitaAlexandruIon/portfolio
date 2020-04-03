@@ -4,25 +4,25 @@
 
 
 {% block content %}
-    {% include 'blog/about.html' %}
+    {% include 'progres_bar.html' %}
     <div class="container">
-    <h2 class="mt-5">Portfolio</h2>
-    <hr>
-    <div class="row">
-        {% for project in projects %}
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                {% if project.url %}
-                    <a href="{{ project.url }}">
-                        <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
-                    </a>
-                {% else %}
+        <h2 class="mt-5">Portfolio</h2>
+        <hr>
+        <div class="row">
+            {% for project in projects %}
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    {% if project.url %}
+                        <a href="{{ project.url }}">
+                            <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+                        </a>
+                    {% else %}
 
-                    <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
-                {% endif %}
-                <h3><a href="{% url 'projects_detail' pk=project.pk %}">{{ project.title }}</a></h3>
-            </div>
-        {% endfor %}
-    </div>
+                        <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+                    {% endif %}
+                    <h3><a href="{% url 'projects_detail' pk=project.pk %}">{{ project.title }}</a></h3>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
 
