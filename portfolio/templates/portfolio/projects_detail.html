@@ -3,6 +3,14 @@
 
 
 {% block content %}
+    <div class="box-2 hover">
+        <div class="btn btn-two">
+        <span>        <a href="{% url 'home' %}">
+            GET BACK
+        </a>
+</span>
+        </div>
+    </div>
     <div class="container-fluid align-content-center">
         <h1 class='posttitle loader'>{{ project.title }}</h1>
         <div class="detail_image img-fluid">
@@ -10,30 +18,34 @@
         </div>
         <div class="jumbotron">
             <pre class='text-center'>{{ projects.description|safe }}</pre>
-            <p class="text-capitalize text-center"><ul><li>{{ projects.programing_languages }}</li></ul></p>
-{#            <div class="col-xs-6 col-md-3">#}
-{#                <ul class="float-right">#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-danger">{{ projects.programing_languages.0 }}</button>#}
-{#                    </li>#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-primary">{{ projects.programing_languages.1 }}</button>#}
-{#                    </li>#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-dark">{{ projects.programing_languages.2 }}</button>#}
-{#                    </li>#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-success">{{ projects.programing_languages.3 }}</button>#}
-{#                    </li>#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-warning">{{ projects.programing_languages.4 }}</button>#}
-{#                    </li>#}
-{#                    <li>#}
-{#                        <button class="btn btn-lg btn-success">{{ projects.programing_languages.5 }}</button>#}
-{#                    </li>#}
-{##}
-{#                </ul>#}
-{#            </div>#}
+            <p class="text-capitalize text-center">
+            <ul>
+                <li>{{ projects.programing_languages }}</li>
+            </ul>
+            </p>
+            {#            <div class="col-xs-6 col-md-3">#}
+            {#                <ul class="float-right">#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-danger">{{ projects.programing_languages.0 }}</button>#}
+            {#                    </li>#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-primary">{{ projects.programing_languages.1 }}</button>#}
+            {#                    </li>#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-dark">{{ projects.programing_languages.2 }}</button>#}
+            {#                    </li>#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-success">{{ projects.programing_languages.3 }}</button>#}
+            {#                    </li>#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-warning">{{ projects.programing_languages.4 }}</button>#}
+            {#                    </li>#}
+            {#                    <li>#}
+            {#                        <button class="btn btn-lg btn-success">{{ projects.programing_languages.5 }}</button>#}
+            {#                    </li>#}
+            {##}
+            {#                </ul>#}
+            {#            </div>#}
 
         </div>
     </div>
